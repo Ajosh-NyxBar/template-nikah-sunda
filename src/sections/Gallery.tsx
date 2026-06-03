@@ -4,12 +4,12 @@ import SectionWrapper from '../components/SectionWrapper'
 import OrnamentDivider from '../components/OrnamentDivider'
 
 const images = [
-  { id: 1, aspect: 'aspect-[3/4]', label: 'Prewedding 1' },
-  { id: 2, aspect: 'aspect-square', label: 'Prewedding 2' },
-  { id: 3, aspect: 'aspect-[4/5]', label: 'Prewedding 3' },
-  { id: 4, aspect: 'aspect-[3/4]', label: 'Prewedding 4' },
-  { id: 5, aspect: 'aspect-square', label: 'Prewedding 5' },
-  { id: 6, aspect: 'aspect-[4/5]', label: 'Prewedding 6' },
+  { id: 1, aspect: 'aspect-[3/4]', src: 'https://images.unsplash.com/photo-1594552072238-b8a33785b6cd?w=400&h=530&fit=crop' },
+  { id: 2, aspect: 'aspect-square', src: 'https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=400&h=400&fit=crop' },
+  { id: 3, aspect: 'aspect-[4/5]', src: 'https://images.unsplash.com/photo-1561451213-87de08bb7c37?w=400&h=500&fit=crop' },
+  { id: 4, aspect: 'aspect-[3/4]', src: 'https://images.unsplash.com/photo-1537633552985-df8429e8048b?w=400&h=530&fit=crop' },
+  { id: 5, aspect: 'aspect-square', src: 'https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?w=400&h=400&fit=crop' },
+  { id: 6, aspect: 'aspect-[4/5]', src: 'https://images.unsplash.com/photo-1500049242364-5f500807cdd7?w=400&h=500&fit=crop' },
 ]
 
 export default function Gallery() {
@@ -43,14 +43,11 @@ function GalleryItem({ image, index }: { image: typeof images[0]; index: number 
       className="break-inside-avoid"
     >
       <div className={`${image.aspect} relative overflow-hidden rounded-2xl leaf-shadow border border-sunda-green/5 group cursor-pointer`}>
-        <div className="absolute inset-0 bg-gradient-to-br from-sunda-green/10 to-sunda-gold/5 flex items-center justify-center">
-          <div className="text-center">
-            <div className="w-14 h-14 rounded-full bg-sunda-green/10 flex items-center justify-center mx-auto mb-2">
-              <span className="font-display text-xl text-sunda-green/30">{image.id}</span>
-            </div>
-            <p className="text-xs text-sunda-brown/40 font-sans">{image.label}</p>
-          </div>
-        </div>
+        <img
+          src={image.src}
+          alt={`Gallery ${image.id}`}
+          className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+        />
         <div className="absolute inset-0 bg-sunda-green/0 group-hover:bg-sunda-green/10 transition-colors duration-500 rounded-2xl" />
       </div>
     </motion.div>

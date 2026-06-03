@@ -16,10 +16,12 @@ export default function Couple() {
 
         {/* Groom */}
         <div className="mb-12">
-          <div className="w-36 h-36 mx-auto mb-6 rounded-full border-2 border-sunda-green/20 overflow-hidden bg-sunda-cream-dark flex items-center justify-center">
-            <div className="w-32 h-32 rounded-full bg-gradient-to-br from-sunda-green/10 to-sunda-gold/10 flex items-center justify-center">
-              <span className="font-display text-4xl text-sunda-green/40">AS</span>
-            </div>
+          <div className="w-36 h-36 mx-auto mb-6 rounded-full border-2 border-sunda-green/20 overflow-hidden">
+            <img
+              src="https://images.unsplash.com/photo-1620577438168-b4c67e812413?w=300&h=300&fit=crop&crop=face"
+              alt="Mempelai Pria"
+              className="w-full h-full object-cover"
+            />
           </div>
           <h2 className="font-display text-3xl sm:text-4xl text-sunda-brown mb-2">
             Asep Sunandar Sunarya
@@ -43,10 +45,12 @@ export default function Couple() {
 
         {/* Bride */}
         <div className="mt-12">
-          <div className="w-36 h-36 mx-auto mb-6 rounded-full border-2 border-sunda-green/20 overflow-hidden bg-sunda-cream-dark flex items-center justify-center">
-            <div className="w-32 h-32 rounded-full bg-gradient-to-br from-sunda-gold/10 to-sunda-green/10 flex items-center justify-center">
-              <span className="font-display text-4xl text-sunda-green/40">NS</span>
-            </div>
+          <div className="w-36 h-36 mx-auto mb-6 rounded-full border-2 border-sunda-green/20 overflow-hidden">
+            <img
+              src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=300&h=300&fit=crop&crop=face"
+              alt="Mempelai Wanita"
+              className="w-full h-full object-cover"
+            />
           </div>
           <h2 className="font-display text-3xl sm:text-4xl text-sunda-brown mb-2">
             Neng Siti Nurhaliza
